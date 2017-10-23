@@ -2,24 +2,25 @@
   "name": "case-converter",
   "description": "transform object to use different case conventions",
   "main": "./dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "cm": "git-cz",
     "precommit": "lint-staged && npm run cover",
-    "check-coverage":
-      "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "report-coverage":
-      "cat ./coverage/lcov.info | codecov token=$CODECOV_TOKEN",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "report-coverage": "cat ./coverage/lcov.info | codecov token=$CODECOV_TOKEN",
     "build": "webpack",
     "prebuild": "rm -rf dist",
     "test": "jest",
     "cover": "npm test -- --coverage",
-    "semantic-release":
-      "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Moezalez/case-converter.git"
+    "url": "https://github.com/travelperk/case-converter.git"
   },
   "keywords": [
     "camelCase",
@@ -32,9 +33,9 @@
   "author": "Moritz Sattler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Moezalez/case-converter/issues"
+    "url": "https://github.com/travelperk/case-converter/issues"
   },
-  "homepage": "https://github.com/Moezalez/case-converter#readme",
+  "homepage": "https://github.com/travelperk/case-converter/#readme",
   "tonicExampleFilename": "example.js",
   "devDependencies": {
     "babel-loader": "6.2.4",
@@ -51,6 +52,7 @@
     "prettier": "^1.7.4",
     "semantic-release": "^4.3.5",
     "standard": "7.1.2",
+    "weallcontribute": "^1.0.8",
     "webpack": "1.13.1"
   },
   "dependencies": {
@@ -61,10 +63,16 @@
     "lodash.upperfirst": "^4.3.1"
   },
   "babel": {
-    "presets": ["es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "standard": {
-    "globals": ["describe", "it"]
+    "globals": [
+      "describe",
+      "it"
+    ]
   },
   "config": {
     "commitizen": {
@@ -72,7 +80,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,json}": ["prettier --write", "git add"]
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "jest": {
     "coverageThreshold": {
