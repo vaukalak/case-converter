@@ -1,4 +1,4 @@
-const caseConverter = require('case-converter');
+const caseConverter = require('@travelperksl/case-converter');
 
 const snakeCase = {
     an_object: {

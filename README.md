@@ -11,12 +11,12 @@ A lightweight library that converts objects to different case conventions. Great
 - `toPascalCase`
 
 ## Install
-`npm install case-converter`
+`npm install @travelperksl/case-converter`
 
 ## Example:
 
 ```JavaScript
-  import { toCamelCase } from 'case-converter'
+  import { toCamelCase } from '@travelperksl/case-converter'
 
   const snakeCase = {
     an_object: {

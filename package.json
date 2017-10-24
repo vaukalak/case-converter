@@ -1,5 +1,5 @@
 {
-  "name": "case-converter",
+  "name": "@travelperksl/case-converter",
   "description": "transform object to use different case conventions",
   "main": "./dist/index.js",
   "files": [
@@ -28,7 +28,9 @@
     "camel",
     "snake",
     "case",
-    "converter"
+    "converter",
+    "pascal",
+    "PascalCase"
   ],
   "author": "Moritz Sattler",
   "license": "MIT",
@@ -50,7 +52,7 @@
     "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
     "prettier": "^1.7.4",
-    "semantic-release": "^4.3.5",
+    "semantic-release": "^8.2.0",
     "standard": "7.1.2",
     "weallcontribute": "^1.0.8",
     "webpack": "1.13.1"
@@ -94,5 +96,6 @@
         "lines": 100
       }
     }
-  }
+  },
+  "version": "0.0.0-development"
 }
