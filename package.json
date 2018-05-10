@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/travelperk/case-converter/#readme",
   "tonicExampleFilename": "example.js",
-  "engines": { "node": "8.7.0" },
+  "engines": { "node": "^8.7.0" },
   "devDependencies": {
     "babel-loader": "6.2.4",
     "babel-plugin-__coverage__": "11.0.0",
